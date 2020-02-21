@@ -1,8 +1,8 @@
 # TabSearch
-Browser-like search app that consumes an API
+Browser-like search app that consumes the youtube API
 
 To run the server: 
-1. Generate your own API key and place it in the designated variable inside server.js.
+1. Generate your own youtube API key and place it in the designated variable inside server.js.
 2. npm install
 3. npm start
 
