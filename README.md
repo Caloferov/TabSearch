@@ -7,4 +7,4 @@ To run the server:
 
 To run the client: 
 1. npm install
-2.ng serve
+2. ng serve
