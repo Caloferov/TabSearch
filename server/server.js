@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
 
 const baseUrl = "https://www.googleapis.com/youtube/v3/search?"
 
-const apiKey = "AIzaSyAuKFvOehdUIapTUkje_9zKNHVdGEQ1RVk";
+const apiKey = "INSERT_YOUR_API_KEY_HERE";
 app.get('/search', (req, res) => {
     let maxResults = req.query.maxResults ? req.query.maxResults : '5';
     let type = req.query.type;
