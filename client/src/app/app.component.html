@@ -1,0 +1,20 @@
+<header class="flex">
+    <ul class="tabs flex h100 w100">
+        <li *ngFor="let tab of tabs" class="tab flex center h100 tran04"
+            [ngClass]="{'activeTab' : activeTabID === tab.id}" (click)="chooseTab(tab.id)">
+            <span class="tabName">{{tab.title}}</span>
+            <div class="circle center tran04">
+                <img src="../assets/close-24px.svg" class="x tran04" (click)="closeTab(tab.id)">
+            </div>
+        </li>
+
+        <div class="plus center tran04" (click)="createNewTab()"><img src="../assets/add-24px.svg" class="plusIcon">
+        </div>
+    </ul>
+</header>
+
+<main class="h100">
+    <app-tab-content *ngFor="let tab of tabs" [id]="tab.id" (updateTabTitle)="updateTabTitle($event)"
+        class="tabContent w100 column h100" [ngClass]="{'visibleContent': activeTabID === tab.id}">
+    </app-tab-content>
+</main>

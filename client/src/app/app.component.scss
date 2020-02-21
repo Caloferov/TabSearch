@@ -1,0 +1,97 @@
+header {
+  background-color: darkgray;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 3;
+  height: 50px;
+  background-color: #673ab7;
+}
+
+.tabs {
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.tab {
+  align-items: center;
+  color: white;
+  cursor: default;
+  width: 120px;
+
+  &:hover {
+    background: #58329b;
+  }
+  .tabName {
+    text-overflow: clip;
+    margin-left: 23px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .circle {
+    margin: 0 11px 0 auto;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover {
+      background: gray;
+    }
+
+    .x {
+      width: 16px;
+      height: 16px;
+      margin-left: auto;
+    }
+    &:hover {
+      background: #7569b7;
+    }
+  }
+}
+
+.plus {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+  .plusIcon {
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    background: #58329b;
+  }
+}
+
+.activeTab {
+  background: #4d2a8b;
+  &:hover {
+    background: #4d2a8b;
+  }
+}
+
+main {
+  min-height: calc(100vh - 50px);
+  .tabContent {
+    position: absolute;
+    display: none;
+    height: calc(100% - 50px);
+  }
+  .visibleContent {
+    display: flex;
+  }
+}
+
+footer {
+  height: 50px;
+  background-color: darkgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 3;
+  margin-top: auto;
+}
